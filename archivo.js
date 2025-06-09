@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  emailjs.init("_MEI0h24XduHtVbVa"); 
+emailjs.init("_MEI0h24XduHtVbVa"); 
 
     const form = document.getElementById('formulario');
 
@@ -35,5 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
             confirmButtonColor: '#e67e22'
         });
         });
+    });
+});
+
+const navLinks = document.querySelectorAll('.header__nav-item a');
+const checkbox = document.querySelector('.header__checkbox');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      checkbox.checked = false; // Desactiva el menú
     });
 });
