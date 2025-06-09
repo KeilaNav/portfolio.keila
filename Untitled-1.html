@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" 
+  content="width=device-width, initial-scale=1.0">
+  <title>Keila Web</title>
+  <link rel="icon" href="icono.png" type="image/png">
+  <link rel="stylesheet" href="aechivo.css">
+</head>
+
+<body>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="archivo.js" defer></script>
+  
+  <header class="header">
+    <input type="checkbox" class="header__checkbox" id="open-menu">
+    <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+    <div class="header__logo-container">
+      <img class="header__logo" src="icono.png" alt="logo">
+    </div>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"> <a href="#profile">Sobre mí</a></li>
+        <li class="header__nav-item"> <a href="#portfolio">Portafolio</a></li>
+        <li class="header__nav-item"> <a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="profile" id="profile">
+    <div class="profile__wrapper">
+      <div class="profile__img-container">
+        <img src="imagen_keila_hermosa.jpg" class="profile__img" alt="keila re linda">
+      </div>
+      <div class="profile__data-container">
+        <div class="profile__data">
+          <div class="profile__description">
+            <h1>¿Quién es Keila Navarta?</h1>
+            <p>Keila Navarta es estudiante de programación web en la Universidad Nacional del Oeste. Está enfocada en el desarrollo front-end, con un marcado interés por el diseño de interfaces y la creación de experiencias digitales funcionales y atractivas. Actualmente se está formando en tecnologías como HTML, CSS y JavaScript, y su objetivo es seguir creciendo como desarrolladora web, aplicando sus conocimientos en proyectos reales que reflejen su evolución en el mundo del desarrollo digital.
+            </p>
+          </div>
+          <div class="profile__skills-container">
+            <h2>SKILLS</h2>
+            <ul>
+              <li class="profile__skill">
+                <div class="load-bar">
+                      <div class="load-bar__bar bar--50">50% </div>
+                </div>
+                <span class="profile_skill-name">HTML</span>
+              </li>   
+              <li class="profile__skill">
+                <div class="load-bar">
+                      <div class="load-bar__bar bar--50">50% </div>
+                </div>
+                <span class="profile_skill-name">CSS</span>
+              </li>         
+              <li class="profile__skill">
+                <div class="load-bar">
+                      <div class="load-bar__bar bar--20">20% </div>
+                </div>
+                <span class="profile_skill-name">JS</span>
+              </li>         
+              <li class="profile__skill">
+                <div class="load-bar">
+                      <div class="load-bar__bar bar--0">0% </div>
+                </div>
+                <span class="profile_skill-name">PYTON</span>
+              </li>         
+              <li class="profile__skill">
+                <div class="load-bar">
+                      <div class="load-bar__bar bar--0">0% </div>
+                </div>
+                <span class="profile_skill-name">SQL</span>
+              </li>                      
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="portfolio" id="portfolio">
+    <h2 class="portfolio__title">SECCIÓN DE PORTAFOLIO</h2>
+    <div class="portfolio__project-container">
+      <div class="portfolio__project">
+        <h2 class="portfolio__project-name">PROYECTO</h2>
+      </div>
+      <div class="portfolio__project">
+        <h2 class="portfolio__project-name">PROYECTO</h2>
+      </div>
+      <div class="portfolio__project">
+        <h2 class="portfolio__project-name">PROYECTO</h2>
+      </div>
+      <div class="portfolio__project">
+        <h2 class="portfolio__project-name">PROYECTO</h2>
+      </div>
+      <div class="portfolio__project">
+        <h2 class="portfolio__project-name">PROYECTO</h2>
+      </div>
+      <div class="portfolio__project">
+        <h2 class="portfolio__project-name">PROYECTO</h2>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <section class="form" id="contact">
+    <h2 class="form__title">CONTACTO</h2>
+    <form id="formulario" class="form__form">
+      <div class="form__input-container">
+        <label>Nombre
+          <input type="text" name="user_name" placeholder="Camila " required>
+        </label>
+      </div>
+      <div class="form__input-container">
+        <label>Apellido
+          <input type="text" name="user_lastname" placeholder="Rodriguez" required>
+        </label>
+      </div>
+      <div class="form__input-container">
+        <label>E-mail
+          <input type="email" name="user_email" placeholder="email@ejemplo.com"required>
+        </label>
+      </div>
+      <div class="form__input-container">
+        <label>Mensaje
+          <textarea name="message" placeholder="Escribe tu mensaje..."></textarea required>
+        </label>
+      </div>
+      <div class="form__input-container">
+        <label>Verificación rápida de seguridad.</label>
+      <label>¿Cuánto es 2 + 3?
+        <input type="text" id="captcha" placeholder="Escribe tu respuesta" required>
+      </label>
+      </div>
+      <div class="form__input-container">
+        <input type="submit">
+      </div>
+    </form> 
+
+      <div class="social-links-maps">
+        
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps?q=-34.6669,-58.7274&hl=es&z=14&output=embed" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="social-links">
+            <a href="https://wa.me/5491139451190" target="_blank" class="social-link whatsapp" aria-label="WhatsApp">
+              <img src="vecteezy_whatsapp-logo-png-whatsapp-icon-png-whatsapp-transparent_18930746.png" alt="WhatsApp">
+            </a>
+            <a id="instagram.img" href="https://instagram.com/keylanavarta" target="_blank" class="social-link instagram" aria-label="Instagram">
+              <img src="instagram-logo-png-instagram-icon.png" alt="Instagram">
+            </a>
+            <a id="facebook.img" href="https://facebook.com/keilaNavarta" target="_blank" class="social-link facebook" aria-label="Facebook">
+              <img src="facebook-logo-png-icon-.png" alt="Facebook">
+            </a>
+        </div>
+      </div>
+      
+  
+  </section>
+  <footer>
+    <strong> © 2025 - Keila Navarta - Web</strong> 
+  </footer>
+  
+</body>
+
+</html>
+
